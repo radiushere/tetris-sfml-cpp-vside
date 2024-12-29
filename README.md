@@ -2,24 +2,24 @@
 This document provides an overview of the implementation of a Tetris game using C++ and the SFML (Simple and Fast Multimedia Library) framework. Tetris is a classic tile-matching puzzle game where players manipulate pieces to fit them into rows, clearing rows as they complete them. This project implements core Tetris mechanics, including piece spawning, movement, rotation, and line clearing, as well as a basic scoring system.
 ________________________________________
 **2. Project Overview** <br>
-The Tetris game is implemented using:
-•	Language: C++
-•	Library: SFML for rendering graphics and handling input
-•	Grid: A 2D array to manage the game state
-•	Piece Logic: Structs for handling individual Tetris pieces
-Project Goals:
-•	Implement a fully playable Tetris game.
-•	Render the game grid and pieces using SFML.
-•	Handle game logic like piece collisions, rotations, and line clearing.
-•	Include a scoring system and game over conditions.
+The Tetris game is implemented using: <br>
+•	Language: C++ <br>
+•	Library: SFML for rendering graphics and handling input<br>
+•	Grid: A 2D array to manage the game state<br>
+•	Piece Logic: Structs for handling individual Tetris pieces<br>
+Project Goals:<br>
+•	Implement a fully playable Tetris game. <br>
+•	Render the game grid and pieces using SFML.<br>
+•	Handle game logic like piece collisions, rotations, and line clearing.<br>
+•	Include a scoring system and game over conditions.<br>
 ________________________________________
 **3. Key Features** <br>
-•	Dynamic Piece Movement: Pieces can move left, right, and down, as well as rotate.
-•	Line Clearing: Complete rows are cleared, and the rows above them drop.
-•	Collision Detection: Prevents pieces from overlapping or moving out of bounds.
-•	Scoring System: Players score points for clearing rows.
-•	Game Over Condition: The game ends if pieces reach the top of the grid.
-•	Grid Rendering: Visual representation of the playfield and pieces.
+•	Dynamic Piece Movement: Pieces can move left, right, and down, as well as rotate. <br>
+•	Line Clearing: Complete rows are cleared, and the rows above them drop. <br>
+•	Collision Detection: Prevents pieces from overlapping or moving out of bounds. <br>
+•	Scoring System: Players score points for clearing rows. <br>
+•	Game Over Condition: The game ends if pieces reach the top of the grid. <br>
+•	Grid Rendering: Visual representation of the playfield and pieces. <br>
 ________________________________________
 **4. Code Structure** <br>
 Main Components
