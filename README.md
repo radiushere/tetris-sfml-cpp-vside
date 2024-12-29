@@ -1,7 +1,7 @@
-**1. Introduction**
+**1. Introduction** <br>
 This document provides an overview of the implementation of a Tetris game using C++ and the SFML (Simple and Fast Multimedia Library) framework. Tetris is a classic tile-matching puzzle game where players manipulate pieces to fit them into rows, clearing rows as they complete them. This project implements core Tetris mechanics, including piece spawning, movement, rotation, and line clearing, as well as a basic scoring system.
 ________________________________________
-**2. Project Overview**
+**2. Project Overview** <br>
 The Tetris game is implemented using:
 •	Language: C++
 •	Library: SFML for rendering graphics and handling input
@@ -13,7 +13,7 @@ Project Goals:
 •	Handle game logic like piece collisions, rotations, and line clearing.
 •	Include a scoring system and game over conditions.
 ________________________________________
-**3. Key Features**
+**3. Key Features** <br>
 •	Dynamic Piece Movement: Pieces can move left, right, and down, as well as rotate.
 •	Line Clearing: Complete rows are cleared, and the rows above them drop.
 •	Collision Detection: Prevents pieces from overlapping or moving out of bounds.
@@ -21,7 +21,7 @@ ________________________________________
 •	Game Over Condition: The game ends if pieces reach the top of the grid.
 •	Grid Rendering: Visual representation of the playfield and pieces.
 ________________________________________
-**4. Code Structure**
+**4. Code Structure** <br>
 Main Components
 1.	Piece Handling: 
 o	PIECE_TYPE: Enum for different Tetris shapes (e.g., I, O, T, L).
@@ -34,7 +34,7 @@ o	Movement, rotation, collision detection, and line clearing logic.
 4.	Rendering: 
 o	SFML sf::Sprite objects used to draw pieces and grid elements.
 ________________________________________
-**5. Explanation of Key Components**
+**5. Explanation of Key Components** <br>
 Piece Movement and Rotation
 Each piece is defined by four coordinates (tiles) that can move or rotate:
 struct Piece {
@@ -57,7 +57,7 @@ for (size_t i = 0; i < 12; i++) {
     }
 }
 ________________________________________
-**6. How the Game Works**
+**6. How the Game Works** <br>
 Initialization
 1.	The game initializes a grid and creates the first Tetris piece.
 2.	The rendering window is opened using SFML.
@@ -74,7 +74,7 @@ o	The current state of the grid and the active piece are drawn to the screen.
 End of Game
 •	When the game over condition is met, the game stops, and a "Game Over" message is displayed.
 ________________________________________
-**7. Conclusion**
+**7. Conclusion** <br>
 This project implements a basic but functional version of Tetris using C++ and SFML. It demonstrates essential game development concepts such as grid-based logic, collision detection, and rendering with a graphical library. With further enhancements, this project could evolve into a polished and engaging game experience.
 ________________________________________
 **8. Images**
