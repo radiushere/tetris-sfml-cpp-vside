@@ -78,14 +78,12 @@ ________________________________________
 This project implements a basic but functional version of Tetris using C++ and SFML. It demonstrates essential game development concepts such as grid-based logic, collision detection, and rendering with a graphical library. With further enhancements, this project could evolve into a polished and engaging game experience.
 ________________________________________
 **8. Images**
-Main Menu:
+<br>
 ![image](https://github.com/user-attachments/assets/4053c4c1-6646-427c-9cb7-cc482b692d99)
-
-
-Game Scene:
+<br>
 ![image](https://github.com/user-attachments/assets/4349a7c2-594c-4287-bc8f-1be9bca769ba)
+<br>
+![image](https://github.com/user-attachments/assets/a1b00811-e62e-4c99-a0be-509a8a3ee738)
 
-Game Scene:
-![image](https://github.com/user-attachments/assets/90826ec8-8254-4b5e-bed8-16cfe7b2b41c)
 
  
