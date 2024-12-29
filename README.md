@@ -35,27 +35,27 @@ o	Movement, rotation, collision detection, and line clearing logic.
 o	SFML sf::Sprite objects used to draw pieces and grid elements.
 ________________________________________
 **5. Explanation of Key Components** <br>
-Piece Movement and Rotation
-Each piece is defined by four coordinates (tiles) that can move or rotate:
-struct Piece {
-    Point a, b, c, d; // Four tiles of the piece
-};
-•	Movement: The piece coordinates are updated based on player input or timer.
-•	Rotation: Rotation is handled by transforming the piece's tiles around a pivot point.
-Grid and Collision Detection
-•	colliders: Tracks locked tiles in the playfield. A value of 2 indicates a locked block.
-•	Collision detection checks if the new position of the piece overlaps with existing locked blocks or boundaries.
-Line Clearing
-When a row is completely filled:
-1.	The row is cleared by shifting rows above it down.
-2.	The score counter is incremented.
-Game Over Condition
-If any tile in the topmost row is filled, the game ends:
-for (size_t i = 0; i < 12; i++) {
-    if (colliders[0][i] == 2) {
-        gameState = GAMEOVER;
-    }
-}
+Piece Movement and Rotation <br>
+Each piece is defined by four coordinates (tiles) that can move or rotate: <br>
+struct Piece { <br>
+    Point a, b, c, d; // Four tiles of the piece <br>
+}; <br>
+•	Movement: The piece coordinates are updated based on player input or timer. <br>
+•	Rotation: Rotation is handled by transforming the piece's tiles around a pivot point. <br>
+Grid and Collision Detection <br>
+•	colliders: Tracks locked tiles in the playfield. A value of 2 indicates a locked block. <br>
+•	Collision detection checks if the new position of the piece overlaps with existing locked blocks or boundaries. <br>
+Line Clearing <br>
+When a row is completely filled: <br>
+1.	The row is cleared by shifting rows above it down. <br>
+2.	The score counter is incremented. <br>
+Game Over Condition <br>
+If any tile in the topmost row is filled, the game ends: <br>
+for (size_t i = 0; i < 12; i++) { <br>
+    if (colliders[0][i] == 2) { <br>
+        gameState = GAMEOVER; <br>
+    } <br>
+} <br>
 ________________________________________
 **6. How the Game Works** <br>
 Initialization
